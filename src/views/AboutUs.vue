@@ -11,7 +11,7 @@
     <div class="container mx-auto max-w-3xl">
         <div class="grid grid-cols-3 gap-5">
 
-            <div class="card mb-10 my-card mx-auto bg-white shadow-xl hover:shadow" v-for="dev in devs" :key="dev.github">
+            <div class="card mb-10 my-card mx-auto bg-white shadow-xl hover:shadow rounded-lg" v-for="dev in devs" :key="dev.github">
                 <img class="w-24 mx-auto rounded-full border-8 border-white" :src="dev.avatar" alt="">
                 <div class="text-center mt-1 text-xl font-medium">{{ dev.name }}</div>
                 <div class="text-center mt-2 font-light text-sm">@{{ dev.github }}</div>
