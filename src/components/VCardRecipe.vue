@@ -37,7 +37,7 @@ export default {
             await this.$router.push({
                     path: '/recipes/'+this.id,
                 });
-                this.$router.go()
+            this.$router.go()
         }
 
     }
