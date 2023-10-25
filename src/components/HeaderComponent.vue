@@ -38,13 +38,13 @@
                         <div class="hidden sm:ml-6 sm:flex flex items-center">
                             <div class="flex items-center space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#" class="bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
+                                <a href="/" class="bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Inicio</a>
                                 <a href="#"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">Recetas</a>
                                 <a href="#"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">Recomendaciones</a>
-                                <a href="#"
+                                <a href="AboutUs"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">Sobre
                                     Nosotros</a>
                             </div>
