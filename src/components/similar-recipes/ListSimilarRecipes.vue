@@ -27,17 +27,13 @@ export default {
 
     async created() {
         this.recipes = await this.getSimilarRecipes()
-        console.log("Lista")
-        console.log(this.recipes);
         this.infoRecipeComplete = await this.getRecipesInfo(this.recipes)
-        console.log("estamos aqui")
-        console.log(this.infoRecipeComplete);
     },
     methods: {
         async getSimilarRecipes() {
             const apiKey = import.meta.env.VITE_API_KEY;
             const url = `https://api.spoonacular.com/recipes/${this.id}/similar?apiKey=${apiKey}&number=4`;
-            let similarRecipes=[]
+            let similarRecipes = []
 
             await fetch(url)
                 .then((response) => response.json())
@@ -45,19 +41,14 @@ export default {
                     similarRecipes = recipes;
                 });
 
-            console.log("holaaaaa")
             return await similarRecipes;
         },
         getRecipesInfo(recipes) {
-            console.log(recipes)
             const idList = recipes.map((recipe) => recipe.id);
-            console.log(idList)
             const apiKey = import.meta.env.VITE_API_KEY;
             const promiseList = [];
             idList.forEach(id => {
                 const request = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`;
-                console.log("request")
-                console.log(request)
                 promiseList.push(request);
             })
             const p1 = fetch(promiseList[0])
@@ -65,12 +56,9 @@ export default {
             const p3 = fetch(promiseList[2])
             const p4 = fetch(promiseList[3])
             const promises = [p1, p2, p3, p4];
-            console.log("promise")
-            console.log(promiseList)
             Promise.all(promises)
                 .then((responses) => Promise.all(responses.map((response) => response.json()))
                     .then((recipes) => {
-                        console.log(recipes)
                         this.infoRecipeComplete = recipes.map((recipe) => {
                             return {
                                 id: recipe.id,

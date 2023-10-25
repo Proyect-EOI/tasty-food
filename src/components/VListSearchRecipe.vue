@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-max mx-5 my-5 bg-gray-100">
-        <div class="recipe-list shadow-md flex justify-center flex-wrap gap-6 mb-6">
+    <div class=" container max-w-max m-5 p-5">
+        <div class="recipe-list flex justify-center flex-wrap gap-6 mb-6 ">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"
                 :imageUrl="recipe.image" :name="recipe.title" :preparationTime="String(recipe.readyInMinutes)">
             </VCardRecipe>
@@ -31,9 +31,7 @@ export default {
         this.infoRecipeComplete = this.getRecipesInfo(this.recipes)
     },
     methods: {
-        async getRecipesbyCuisine(cuisine) {
 
-        },
         async findRecipes() {
             const apiKey = import.meta.env.VITE_API_KEY;
             let urlRecepies = "";
@@ -74,8 +72,9 @@ export default {
                             .then((response) => response.json())
                             .then((results) => {
                                 results.results.forEach(element => {
-                                result.push(element);
-                            })});
+                                    result.push(element);
+                                })
+                            });
                     }
             }
             return result
@@ -84,20 +83,19 @@ export default {
             const idList = recipes.map((recipe) => recipe.id);
             const apiKey = import.meta.env.VITE_API_KEY;
             const promiseList = [];
-            const promises=[]
+            const promises = []
             idList.forEach(id => {
                 const request = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`;
                 promiseList.push(request);
             })
             promiseList.forEach(element => {
-                const promise=fetch(element)
+                const promise = fetch(element)
                 promises.push(promise)
             });
 
             Promise.all(promises)
                 .then((responses) => Promise.all(responses.map((response) => response.json()))
                     .then((recipes) => {
-                        console.log(recipes)
                         this.infoRecipeComplete = recipes.map((recipe) => {
                             return {
                                 id: recipe.id,

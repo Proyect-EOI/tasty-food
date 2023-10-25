@@ -28,7 +28,7 @@ export default {
         let position = 0;
 
         setInterval(() => {
-            position += 210; // Ancho de una tarjeta más el margen
+            position += 210;
             if (position >= carousel.scrollWidth) {
                 position = 0;
             }
@@ -37,7 +37,7 @@ export default {
                 left: position,
                 behavior: 'smooth',
             });
-        }, 3000); // Cambia el intervalo de tiempo según tus preferencias
+        }, 3000);
     },
 };
 </script>
@@ -57,7 +57,6 @@ export default {
     flex: 0 0 auto;
     width: 200px;
     height: auto;
-    /* Ajusta el alto según tus necesidades */
     margin-right: 10px;
     scroll-snap-align: start;
     text-align: center;

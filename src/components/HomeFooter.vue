@@ -1,8 +1,5 @@
 <template>
     <footer class="bg-gray-800 text-white p-5 text-center">
-        <div class="footer-logo">
-            <!-- Logo del footer (Personaliza según sea necesario) -->
-        </div>
         <div class="footer-text">
             <h3 class="text-4xl font-bold mb-3">Tasty Food</h3>
             <div class="footer-authors">
