@@ -1,7 +1,5 @@
 <template >
     <div>
-
-
         <!-- BUSCADOR RECETAS 
             
             
@@ -29,13 +27,9 @@
             <CountryFilter />
         </section>
 
-
         <section class="bg-gray-100 p-5">
             <RecipeCategories />
         </section>
-
-
-        <HomeFooter />
     </div>
 </template>
 <script>
@@ -43,7 +37,6 @@ import SearchFood from "../components/search-food/search-food.vue";
 import CountryFilter from '../components/cuisine-types/CountryFilter.vue'
 import RecipeCategories from '../components/categories/RecipeCategories.vue'
 import HomeRecomended from '../components/HomeRecomended.vue'
-import HomeFooter from '@/components/HomeFooter.vue';
 
 
 export default {
@@ -51,8 +44,7 @@ export default {
         SearchFood,
         CountryFilter,
         RecipeCategories,
-        HomeRecomended,
-        HomeFooter,
+        HomeRecomended
 
     },
     data() {
