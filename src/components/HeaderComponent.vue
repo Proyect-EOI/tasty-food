@@ -45,9 +45,9 @@
                                 <router-link to="/recommended"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Recommendations</router-link>
-                                <a href="AboutUs"
+                                <router-link to="/aboutus"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">About
-                                    us</a>
+                                    us</router-link>
                             </div>
                         </div>
                     </div>
