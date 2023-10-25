@@ -59,8 +59,8 @@ export default {
                     name: 'Guillermo Escudero',
                     github: 'gjescuderoamodeo',
                     linkedin: 'guillermo-josé-escudero-amodeo',
-                    city: 'Málaga',
-                    bio: 'Front end Developer. I like to play video games, read, go to the gym and spend time with my family.'
+                    city: 'Sevilla',
+                    bio: 'Web and multiplatform developer. I am passionate about programming because I love creating new and useful things with just a computer and my imagination.'
                 },
                 {
                     avatar: barbaraAvatar,
