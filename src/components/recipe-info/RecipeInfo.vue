@@ -6,7 +6,7 @@
             </div>
             <div class="lg:w-1/2 m-6 ">
                 <h2 class="text-2xl font-semibold mb-4">{{ recipeName }}</h2>
-                <div class="categories flex lg:flex-row gap-4 mb-4">
+                <div class="flex lg:flex-row gap-4 mb-4">
                     <span class="bg-yellow-500 text-white px-2 py-1 rounded-lg mb-2 lg:mb-0 w-auto">
                         ⏱️{{ time }} min
                     </span>
@@ -15,7 +15,7 @@
                         {{ category }}
                     </span>
                 </div>
-                <div class="ingredients m-4">
+                <div class="m-4">
                     <ul class="gap-2 list-disc m-6">
                         <li v-for="(ingredient, index) in ingredients" :key="index">
                             {{ ingredient.original }}
@@ -24,9 +24,10 @@
                 </div>
             </div>
         </div>
-        <div class="instructions m-6">
+        <div class="m-6 flex justify-start flex-col">
             <h3 class="text-xl font-semibold mb-4 text-center">Instructions</h3>
-            <p class="text-lg font-normal text-justify" v-html="processedInstructions"></p>
+            <p v-if="isInstructionsEmpty()" class="text-lg font-normal text-justify">No instructions available</p>
+            <p v-else class="text-lg font-normal text-justify" v-html="processedInstructions"></p>
         </div>
     </div>
 </template>
@@ -67,10 +68,12 @@ export default {
                 });
 
         },
+        isInstructionsEmpty() {
+            return this.instructions === '' || this.instructions === null || this.instructions === undefined;
+        },
     },
     computed: {
         processedInstructions() {
-            // Utiliza DOMParser para convertir el HTML en texto
             const parser = new DOMParser();
             const doc = parser.parseFromString(this.instructions, 'text/html');
             return doc.body.textContent;

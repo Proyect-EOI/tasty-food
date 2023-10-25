@@ -120,7 +120,6 @@ export default {
             }
 
             //si resultado está vacio salta un alert de que no se encuentran resultados
-            console.log(result)
             if (result.length == 0) {
                 this.noResultsFound = true;
                 setTimeout(() => {
