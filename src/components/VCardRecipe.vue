@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-                <router-link :to="'/recipes/' + id"
+                <router-link @click="go" :to="'/recipes/' + id"
                     class="text-center bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-0 py-1 w-full cursor-pointer transition duration-300">
                     PREPARE
                 </router-link>
@@ -32,6 +32,15 @@ export default {
         name: String,
         preparationTime: String
     },
+    methods: {
+        async go() {
+            await this.$router.push({
+                    path: '/recipes/'+this.id,
+                });
+                this.$router.go()
+        }
+
+    }
 
 }
 </script>
