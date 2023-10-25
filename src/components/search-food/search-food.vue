@@ -33,10 +33,10 @@
             </div>
 
             <div class="relative flex-grow">
-                <input @keyup.enter="searchRecepie" type="search" id="search-dropdown"
+                <input @keyup.enter="goViewResult" type="search" id="search-dropdown"
                     class="block w-96 p-2.5 text-sm text-black bg-gray-300 rounded-2xl border-l-gray-50 border-l-2 border border-gray-300dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-black dark:text-blac"
-                    placeholder="Find recipe" required v-model="searchQuery" />
-                <button @click="searchRecepie"
+                    placeholder="Find recipe" required v-model="searchQuery" title="Please select a recipe" />
+                <button @click="goViewResult"
                     class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-black rounded-2xl borde">
                     <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 20 20">
@@ -86,7 +86,7 @@ export default {
             this.selectedCategory = category;
             this.showDropdown = false;
         },
-        async searchRecepie() {
+        async goViewResult() {
             const apiKey = import.meta.env.VITE_API_KEY;
             let urlRecepies = 'https://api.spoonacular.com/recipes/complexSearch';
             let result = [];
@@ -118,18 +118,21 @@ export default {
                     }
                     break;
             }
+
             //si resultado está vacio salta un alert de que no se encuentran resultados
+            console.log(result)
             if (result.length == 0) {
                 this.noResultsFound = true;
                 setTimeout(() => {
                     this.noResultsFound = false;
-                }, 5000);
+                }, 9000);
             } else {
-                localStorage.setItem("result", JSON.stringify(result));
-                localStorage.setItem("inputSearchRecipe", this.searchQuery);
-                this.$router.push({
+                localStorage.setItem("searchQuery", JSON.stringify(this.searchQuery));
+                localStorage.setItem("selectedCategory", JSON.stringify(this.selectedCategory));
+                await this.$router.push({
                     name: 'results',
                 });
+                this.$router.go()
             }
         }
     }
