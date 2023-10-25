@@ -14,9 +14,4 @@ export default {
 </script>
 
 <style>
-#test {
-    background-color: brown;
-    height: 100%;
-    width: 100%;
-}
 </style>

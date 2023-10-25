@@ -1,16 +1,5 @@
 <template >
     <div>
-        <!-- BUSCADOR RECETAS 
-            
-            
-            <div class="search bg-gray-100 p-5">
-            <h2 class="text-2xl font-bold mb-6 text-center">Buscador</h2>
-            <div class="search-box flex items-center justify-center">
-                <input type="text" placeholder="Buscar..." class="search-input">
-                <button class="search-button">Buscar</button>
-            </div>
-        </div>
- -->
         <div class="search bg-gray-100 p-5">
             <h1 class="mt-2 flex justify-center text-2xl mb-8 font-bold">Hundreds of recipes</h1>
             <div class="flex justify-center">
