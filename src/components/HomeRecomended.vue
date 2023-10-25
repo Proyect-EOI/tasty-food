@@ -1,7 +1,7 @@
 <template>
     <section class="bg-gray-100 p-5 text-center">
         <h2 class="text-2xl font-bold mb-6">Our recommendations</h2>
-        <div class="flex justify-around flex-wrap">
+        <div class="flex justify-center flex-wrap gap-6">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"
                 :imageUrl="recipe.image" :name="recipe.title" :preparationTime="String(recipe.readyInMinutes)">
             </VCardRecipe>

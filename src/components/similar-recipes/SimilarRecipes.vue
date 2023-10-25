@@ -1,7 +1,7 @@
 <template>
-    <div class=" bg-gray-100">
-        <h2 class="section-title text-center font-bold text-xl mb-4">SIMILAR RECIPES</h2>
-        <div class="shadow-md p-4 flex flex-wrap justify-center">
+    <div class=" bg-gray-200 bg-opacity-70 mb-6 w-5/6">
+        <h2 class="text-center font-bold text-xl my-4">SIMILAR RECIPES</h2>
+        <div class="shadow-md flex flex-wrap justify-center">
             <ListSimilarRecipes></ListSimilarRecipes>
         </div>
     </div>
@@ -19,10 +19,10 @@ export default {
             id: this.$route.params.id,
         }
     },
-    beforeCreate(){
+    beforeCreate() {
     },
     methods: {
-        
+
     }
 }
 </script>

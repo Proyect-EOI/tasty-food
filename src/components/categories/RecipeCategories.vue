@@ -3,7 +3,7 @@
         <h2 class="text-2xl font-bold mb-6 text-center">Categories</h2>
         <div class="grid grid-cols-3 gap-4 md:grid-cols-4 w-100">
             <button
-                class="p-4 bg-blue-500 font-bold text-white rounded transform transition-transform duration-300 ease-in-out focus:outline-none hover:scale-105 hover:bg-blue-600"
+                class="p-4 text-xs md:text-base lg:text-lg bg-blue-500 font-bold text-white rounded transform transition-transform duration-300 ease-in-out focus:outline-none hover:scale-105 hover:bg-blue-600"
                 @click="findCategories(ingredient)" v-for="(ingredient, index) in recipeCategories" :key="index">
                 {{ ingredient }}
             </button>

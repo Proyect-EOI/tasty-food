@@ -1,5 +1,5 @@
 <template>
-    <div class="border rounded-lg overflow-hidden shadow-md bg-gray-300 mx-5 max-w-2xl w-72 h-96 flex flex-col">
+    <div class="border rounded-lg overflow-hidden shadow-lg bg-blue-100 max-w-2xl w-72 h-96 flex flex-col">
         <img :src="imageUrl" :alt="name" class="card-image object-cover w-full h-64">
         <div class="flex flex-col justify-between h-full">
             <div>
