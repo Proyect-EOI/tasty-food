@@ -36,7 +36,7 @@ npm run build
 ```sh
 npm run lint
 ```
-
+ 
 ## Authors 👩‍💻
 
 - [@Bárbara Flores](https://github.com/bflores96)
