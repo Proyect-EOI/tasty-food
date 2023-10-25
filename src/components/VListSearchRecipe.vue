@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-max mx-5 my-5 bg-gray-100">
-        <div class="recipe-list shadow-md p-4 flex flex-wrap justify-center">
+        <div class="recipe-list shadow-md flex justify-center flex-wrap gap-6 mb-6">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"
                 :imageUrl="recipe.image" :name="recipe.title" :preparationTime="String(recipe.readyInMinutes)">
             </VCardRecipe>
@@ -84,14 +84,15 @@ export default {
             const idList = recipes.map((recipe) => recipe.id);
             const apiKey = import.meta.env.VITE_API_KEY;
             const promiseList = [];
+            const promises=[]
             idList.forEach(id => {
                 const request = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`;
                 promiseList.push(request);
             })
-            const p1 = fetch(promiseList[0])
-            const p2 = fetch(promiseList[1])
-            const p3 = fetch(promiseList[2])
-            const promises = [p1, p2, p3];
+            promiseList.forEach(element => {
+                const promise=fetch(element)
+                promises.push(promise)
+            });
 
             Promise.all(promises)
                 .then((responses) => Promise.all(responses.map((response) => response.json()))

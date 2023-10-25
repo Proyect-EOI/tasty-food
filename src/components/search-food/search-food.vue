@@ -129,9 +129,10 @@ export default {
             } else {
                 localStorage.setItem("searchQuery", JSON.stringify(this.searchQuery));
                 localStorage.setItem("selectedCategory", JSON.stringify(this.selectedCategory));
-                this.$router.push({
+                await this.$router.push({
                     name: 'results',
                 });
+                this.$router.go()
             }
         }
     }
