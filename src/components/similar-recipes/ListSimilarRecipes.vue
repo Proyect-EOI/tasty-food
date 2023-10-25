@@ -37,15 +37,16 @@ export default {
         async getSimilarRecipes() {
             const apiKey = import.meta.env.VITE_API_KEY;
             const url = `https://api.spoonacular.com/recipes/${this.id}/similar?apiKey=${apiKey}&number=4`;
+            let similarRecipes=[]
 
             await fetch(url)
                 .then((response) => response.json())
                 .then((recipes) => {
-                    this.similarRecipes = recipes;
+                    similarRecipes = recipes;
                 });
 
             console.log("holaaaaa")
-            return await this.similarRecipes;
+            return await similarRecipes;
         },
         getRecipesInfo(recipes) {
             console.log(recipes)
