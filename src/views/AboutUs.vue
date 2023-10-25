@@ -11,7 +11,8 @@
     <div class="container mx-auto max-w-3xl">
         <div class="grid grid-cols-3 gap-5">
 
-            <div class="card mb-10 my-card mx-auto bg-white shadow-xl hover:shadow rounded-lg" v-for="dev in devs" :key="dev.github">
+            <div class="card mb-10 my-card mx-auto bg-white shadow-xl hover:shadow rounded-lg" v-for="dev in devs"
+                :key="dev.github">
                 <img class="w-24 mx-auto rounded-full border-8 border-white" :src="dev.avatar" alt="">
                 <div class="text-center mt-1 text-xl font-medium">{{ dev.name }}</div>
                 <div class="text-center mt-2 font-light text-sm">@{{ dev.github }}</div>
@@ -41,6 +42,7 @@
 <script>
 import barbaraAvatar from '../assets/img/barbara.jpeg'
 import guillermoAvatar from '../assets/img/guillermo.jpeg'
+import hilarioAvatar from '../assets/img/hilario.jpg'
 
 export default {
     data() {
@@ -63,12 +65,12 @@ export default {
                     bio: 'Web and multiplatform developer. I am passionate about programming because I love creating new and useful things with just a computer and my imagination.'
                 },
                 {
-                    avatar: barbaraAvatar,
+                    avatar: hilarioAvatar,
                     name: 'Hilario Pérez',
                     github: 'hilarioperez18',
                     linkedin: 'hilarioperez',
-                    city: 'Málaga',
-                    bio: 'Front end Developer. I like to play video games, read, go to the gym and spend time with my family.'
+                    city: 'Hilario',
+                    bio: "Full Stack Developer.I'm a positive person, I'm a lover of technology, I like to help people, I like the guitar."
                 },
                 {
                     avatar: barbaraAvatar,
