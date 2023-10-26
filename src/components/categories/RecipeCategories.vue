@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg p-10 pt-5 m-10 rounded-lg">
         <h2 class="text-2xl font-bold mb-6 text-center">Categories</h2>
         <div class="grid grid-cols-3 gap-4 md:grid-cols-4 w-100">
             <button

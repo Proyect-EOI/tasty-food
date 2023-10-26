@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <h2>Choose your cuisine type</h2>
+    <div class="bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg p-10 pt-1 rounded-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center">Choose your cuisine type</h2>
         <div class="carousel">
             <div class="card" v-for="(cuisine, index) in cuisinesTypes" :key="index">
                 <CountryCard :cuisine="cuisine" />

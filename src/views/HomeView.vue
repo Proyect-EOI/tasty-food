@@ -1,24 +1,17 @@
 <template >
-    <div>
-        <div class="search bg-gray-100 p-5">
-            <h1 class="mt-2 flex justify-center text-2xl mb-8 font-bold">Hundreds of recipes</h1>
+    <div class="container">
+        <div class="buscador search transparent p-5">
+            <h1 class="mt-2 flex justify-center text-2xl mb-8 font-bold">Hundred of recipes</h1>
             <div class="flex justify-center">
                 <SearchFood />
             </div>
         </div>
 
-        <section class="bg-gray-100 p-5">
-            <HomeRecomended></HomeRecomended>
-        </section>
+        <HomeRecomended></HomeRecomended>
 
-        <section class="bg-gray-100 p-5 text-center">
-            <h2 class="text-2xl font-bold mb-6 text-center">Cuisine Type</h2>
-            <CountryFilter />
-        </section>
+        <CountryFilter />
 
-        <section class="bg-gray-100 p-5">
-            <RecipeCategories />
-        </section>
+        <RecipeCategories />
     </div>
 </template>
 <script>
@@ -44,14 +37,20 @@ export default {
 }
 </script>
 <style>
-body {
-    max-width: 1800px;
-    margin: 0 auto;
-}
-
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    gap: 2rem;
+
 }
 </style>

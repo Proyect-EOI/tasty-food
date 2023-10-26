@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-gray-100 p-5 text-center">
+    <section class="bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg pt-5 pb-10 rounded-lg">
         <h2 class="text-2xl font-bold mb-6">Our recommendations</h2>
         <div class="flex justify-center flex-wrap gap-6">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"

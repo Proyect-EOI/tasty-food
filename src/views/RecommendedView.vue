@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <AllRecomended></AllRecomended>
     </div>
 </template>
@@ -14,4 +14,14 @@ export default {
 </script>
 
 <style>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    gap: 2rem;
+
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center pt-10">
         <div class="flex">
             <div class="relative inline-block text-left mr-3">
                 <button @click="toggleDropdown"

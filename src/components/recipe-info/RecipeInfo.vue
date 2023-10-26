@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg">
+    <div class=" bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg rounded-lg">
         <div class="lg:flex lg:items-center">
             <div class="lg:mx-6 lg:mt-6 lg:w-auto">
                 <img :src="image" alt="Imagen de receta" class="w-full h-auto object-cover lg:rounded-lg">
