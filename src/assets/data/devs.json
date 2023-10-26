@@ -16,7 +16,7 @@
     "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
   },
   {
-    "avatar": "src/assets/img/avatars/hilario.jpeg",
+    "avatar": "src/assets/img/avatars/hilario.jpg",
     "name": "Hilario Pérez",
     "github": "hilarioperez18",
     "linkedin": "hilarioperez",
@@ -24,7 +24,7 @@
     "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
   },
   {
-    "avatar": "src/assets/img/avatars/david.jpeg",
+    "avatar": "src/assets/img/avatars/david.jpg",
     "name": "David González",
     "github": "gonzsanz",
     "linkedin": "davidgonzalezsanzz",
