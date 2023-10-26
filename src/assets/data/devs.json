@@ -1,0 +1,50 @@
+[
+  {
+    "avatar": "src/assets/img/avatars/barbara.jpeg",
+    "name": "Bárbara Flores",
+    "github": "bflores96",
+    "linkedin": "barbara-flores-aranda",
+    "city": "Málaga",
+    "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
+  },
+  {
+    "avatar": "src/assets/img/avatars/guillermo.jpeg",
+    "name": "Guillermo Escudero",
+    "github": "gjescuderoamodeo",
+    "linkedin": "guillermo-josé-escudero-amodeo",
+    "city": "Málaga",
+    "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
+  },
+  {
+    "avatar": "src/assets/img/avatars/hilario.jpeg",
+    "name": "Hilario Pérez",
+    "github": "hilarioperez18",
+    "linkedin": "hilarioperez",
+    "city": "Málaga",
+    "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
+  },
+  {
+    "avatar": "src/assets/img/avatars/david.jpeg",
+    "name": "David González",
+    "github": "gonzsanz",
+    "linkedin": "davidgonzalezsanzz",
+    "city": "Madrid",
+    "bio": "Fullstack Developer, passionate about technology and programming, I have a strong professional background and a wide range of interests ranging from fitness to creating personal projects."
+  },
+  {
+    "avatar": "src/assets/img/avatars/ignacio.jpeg",
+    "name": "Ignacio Barbeyto",
+    "github": "IgnacioBar",
+    "linkedin": "ignaciobarmad",
+    "city": "Madrid",
+    "bio": "Full stack developer. I enjoy football and playing video games. In my free time, I hang out with my friends and family."
+  },
+  {
+    "avatar": "src/assets/img/avatars/ivan.jpeg",
+    "name": "Iván Martínez",
+    "github": "ivanmartinezd",
+    "linkedin": "ivan-martinez-de-la-torre",
+    "city": "Málaga",
+    "bio": "Fullstack Developer. I love doing sports after a long day sitting at the computer, relating to people and read interesting things."
+  }
+]

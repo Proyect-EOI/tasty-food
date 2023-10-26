@@ -35,7 +35,7 @@
                         <div class="flex flex-shrink-0 items-center">
                             <img src="../assets/img/tastylogo.png" alt="">
                         </div>
-                        <div class="hidden sm:ml-6 sm:flex flex items-center">
+                        <div class="hidden sm:ml-6 sm:flex items-center">
                             <div class="flex items-center space-x-4">
                                 <router-link to="/" href="#"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
@@ -45,9 +45,9 @@
                                 <router-link to="/recommended"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Recommendations</router-link>
-                                <a href="AboutUs"
+                                <router-link to="/AboutUs"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">About
-                                    us</a>
+                                    us</router-link>
                             </div>
                         </div>
                     </div>
