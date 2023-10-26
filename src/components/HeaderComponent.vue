@@ -62,12 +62,11 @@
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="/" class="bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium"
-                        aria-current="page">Inicio</a>
+                        aria-current="page">Home</a>
                     <a href="/recommended"
-                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Recomendaciones</a>
+                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Recommendations</a>
                     <a href="/aboutus"
-                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Sobre
-                        nosotros</a>
+                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">About us</a>
                 </div>
             </div>
         </nav>
