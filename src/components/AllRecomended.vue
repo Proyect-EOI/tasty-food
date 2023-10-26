@@ -1,12 +1,12 @@
 <template>
-    <section class="bg-gray-100 p-5 text-center">
+    <div class="p-5 text-center  bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg rounded-lg m-10">
         <h2 class="text-2xl font-bold mb-6">Our recommendations</h2>
-        <div class="shadow-md flex justify-center flex-wrap gap-6 mb-6">
+        <div class=" flex justify-center flex-wrap gap-6 mb-6">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"
                 :imageUrl="recipe.image" :name="recipe.title" :preparationTime="String(recipe.readyInMinutes)">
             </VCardRecipe>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -30,7 +30,7 @@ export default {
     methods: {
         async getRecommend() {
             const apiKey = import.meta.env.VITE_API_KEY;
-            let urlRecipes = `https://api.spoonacular.com/recipes/complexSearch?number=15&sort=random&apiKey=${apiKey}`;
+            let urlRecipes = `https://api.spoonacular.com/recipes/complexSearch?number=8&sort=random&apiKey=${apiKey}`;
             let recommendRecipes = []
 
             await fetch(urlRecipes)

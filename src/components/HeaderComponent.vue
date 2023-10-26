@@ -40,12 +40,10 @@
                                 <router-link to="/" href="#"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Home</router-link>
-                                <a href="#"
-                                    class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">Recipes</a>
                                 <router-link to="/recommended"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium"
                                     aria-current="page">Recommendations</router-link>
-                                <router-link to="/AboutUs"
+                                <router-link to="/aboutus"
                                     class="hover:bg-mydarkblue text-white rounded-md px-3 py-2 text-sm font-medium">About
                                     us</router-link>
                             </div>
@@ -63,15 +61,12 @@
             <div v-if="isOpen" class="sm:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium"
-                        aria-current="page">Inicio</a>
-                    <a href="#"
-                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Recetas</a>
-                    <a href="#"
-                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Recomendaciones</a>
-                    <a href="#"
-                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Sobre
-                        nosotros</a>
+                    <a href="/" class="bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium"
+                        aria-current="page">Home</a>
+                    <a href="/recommended"
+                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">Recommendations</a>
+                    <a href="/aboutus"
+                        class="hover:bg-mydarkblue text-white block rounded-md px-3 py-2 text-base font-medium">About us</a>
                 </div>
             </div>
         </nav>

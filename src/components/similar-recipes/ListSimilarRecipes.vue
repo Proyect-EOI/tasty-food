@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-max mx-5 my-5 bg-gray-100">
-        <div class="recipe-list shadow-md p-4 flex flex-wrap justify-center">
+    <div class="max-w-max mx-5 mb-5">
+        <div class="recipe-list p-4 flex flex-wrap justify-center gap-6">
             <VCardRecipe v-for=" recipe  in  infoRecipeComplete " :key="recipe.id" :id="String(recipe.id)"
                 :imageUrl="recipe.image" :name="recipe.title" :preparationTime="String(recipe.readyInMinutes)">
             </VCardRecipe>

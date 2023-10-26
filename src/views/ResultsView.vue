@@ -1,9 +1,7 @@
 <template>
     <div class="container">
-        <div class="m-6">
-            <searchFood class="ml-9" />
-            <VListSearchRecipe :searchQuery="searchQuery"></VListSearchRecipe>
-        </div>
+        <searchFood class="ml-9" />
+        <VListSearchRecipe :searchQuery="searchQuery"></VListSearchRecipe>
     </div>
 </template>
 <script>
@@ -28,4 +26,14 @@ export default {
 </script>
 
 <style>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    gap: 2rem;
+
+}
 </style>

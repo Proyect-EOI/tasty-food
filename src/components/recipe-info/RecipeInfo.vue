@@ -1,12 +1,12 @@
 <template>
-    <div class="container bg-gray-200 md:rounded-3xl mx-auto lg:mt-5">
+    <div class=" bg-gray-200 bg-opacity-70 mx-auto lg:mt-5 w-5/6 shadow-lg rounded-lg">
         <div class="lg:flex lg:items-center">
-            <div class="lg:mx-6 md:mt-6 lg:w-auto">
-                <img :src="image" alt="Imagen de receta" class="w-full h-auto object-cover lg:rounded-3xl">
+            <div class="lg:mx-6 lg:mt-6 lg:w-auto">
+                <img :src="image" alt="Imagen de receta" class="w-full h-auto object-cover lg:rounded-lg">
             </div>
-            <div class="lg:w-1/2 m-6 ">
+            <div class="lg:w-1/2 m-5 lg:my-4">
                 <h2 class="text-2xl font-semibold mb-4">{{ recipeName }}</h2>
-                <div class="flex lg:flex-row gap-4 mb-4">
+                <div class="flex lg:flex-row flex-wrap gap-4 mb-4">
                     <span class="bg-yellow-500 text-white px-2 py-1 rounded-lg mb-2 lg:mb-0 w-auto">
                         ⏱️{{ time }} min
                     </span>

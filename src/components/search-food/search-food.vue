@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col items-center justify-center">
-        <div class="flex">
+    <div class="flex flex-col items-center justify-center pt-10">
+        <div class="flex flex-col sm:flex-row items-center">
             <div class="relative inline-block text-left mr-3">
                 <button @click="toggleDropdown"
-                    class="inline-flex items-center justify-center w-32 h-10 px-20 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md focus:outline-none focus:ring focus:ring-blue-300">
+                    class="inline-flex items-center justify-center w-32 h-10 px-4 sm:px-20 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md focus:outline-none focus:ring focus:ring-blue-300">
                     {{ selectedCategory || 'FindByRecipie' }}
                     <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -32,9 +32,9 @@
                 </div>
             </div>
 
-            <div class="flex-grow relative flex items-center">
-                <input @keyup.enter="goViewResult" type="search" id="search-dropdown"
-                    class="block w-96 p-2.5 text-sm text-black bg-gray-300 rounded-2xl border-l-gray-50 border-l-2 border border-gray-300dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-black dark:text-blac"
+            <div class="flex-grow relative flex items-center" @click="resetNoResultsFound">
+                <input @keyup.enter="goViewResult" @input="resetNoResultsFound" type="search" id="search-dropdown"
+                    class="block w-full sm:w-96 p-2.5 text-sm text-black bg-gray-300 rounded-2xl border-l-gray-50 border-l-2 border border-gray-300dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-black dark:text-blac"
                     placeholder="Find recipe" required v-model="searchQuery" title="Please select a recipe" />
                 <button @click="goViewResult"
                     class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-black rounded-2xl borde">
@@ -48,25 +48,12 @@
             </div>
         </div>
 
-        <div class="w-96 mt-4" v-if=noResultsFound>
-            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
-                <div class="flex items-center">
-                    <div class="py-1">
-                        <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="font-bold">no results found for {{ searchQuery }} recipe</p>
-                        <p class="text-sm">Make sure you know this recipe exist.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="w-full sm:w-96 mt-4" v-if=noResultsFound>
+            <!-- ... -->
         </div>
     </div>
 </template>
+
   
 <script>
 export default {
@@ -81,6 +68,10 @@ export default {
     methods: {
         toggleDropdown() {
             this.showDropdown = !this.showDropdown;
+        },
+        resetNoResultsFound() {
+            this.showDropdown = false;
+            this.noResultsFound = false;
         },
         selectCategory(category) {
             this.selectedCategory = category;
@@ -122,9 +113,9 @@ export default {
             //si resultado está vacio salta un alert de que no se encuentran resultados
             if (result.length == 0) {
                 this.noResultsFound = true;
-                setTimeout(() => {
+                /*setTimeout(() => {
                     this.noResultsFound = false;
-                }, 9000);
+                }, 9000);*/
             } else {
                 localStorage.setItem("searchQuery", JSON.stringify(this.searchQuery));
                 localStorage.setItem("selectedCategory", JSON.stringify(this.selectedCategory));
