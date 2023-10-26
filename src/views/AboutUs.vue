@@ -1,5 +1,6 @@
 <template>
-    <div class="md:container md:mx-auto mx-auto my-10 mb-20 bg-gray-100 rounded p-3 px-4 text-center">
+    <div
+        class="md:container md:mx-auto mx-auto shadow-lg hover:shadow my-10 mb-20 bg-gray-100 rounded p-6 px-4 text-center">
         <h2 class="text-xl font-medium mb-2">Lucid Lynx</h2>
         <p>
             "It all starts with an excellent idea and teamwork". We started this project in a web development bootcamp with
@@ -8,7 +9,7 @@
     </div>
 
 
-    <div class="container mx-auto max-w-3xl">
+    <div class="container mx-auto max-w-4xl">
         <div class="grid grid-cols-3 gap-5">
 
             <div class="card mb-10 my-card mx-auto bg-white shadow-xl hover:shadow rounded-lg" v-for="dev in devs"
@@ -43,6 +44,7 @@
 import barbaraAvatar from '../assets/img/barbara.jpeg'
 import guillermoAvatar from '../assets/img/guillermo.jpeg'
 import hilarioAvatar from '../assets/img/hilario.jpg'
+import ignacioAvatar from '../assets/img/ignacio.jpeg'
 
 export default {
     data() {
@@ -81,7 +83,7 @@ export default {
                     bio: 'Passionate about technology and programming, Fullstack Developer, I have a strong professional background and a wide range of interests ranging from fitness to creating personal projects.'
                 },
                 {
-                    avatar: barbaraAvatar,
+                    avatar: ignacioAvatar,
                     name: 'Ignacio Barbeyto',
                     github: 'IgnacioBar',
                     linkedin: 'ignaciobarmad',
