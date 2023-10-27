@@ -45,6 +45,7 @@ import barbaraAvatar from '../assets/img/barbara.jpeg'
 import guillermoAvatar from '../assets/img/guillermo.jpeg'
 import hilarioAvatar from '../assets/img/hilario.jpg'
 import ignacioAvatar from '../assets/img/ignacio.jpeg'
+import ivanAvatar from '../assets/img/ivan.png'
 
 export default {
     data() {
@@ -91,7 +92,7 @@ export default {
                     bio: 'Full stack developer. I enjoy football and playing video games. In my free time, I hang out with my friends and family.'
                 },
                 {
-                    avatar: barbaraAvatar,
+                    avatar: ivanAvatar,
                     name: 'Iván Martínez',
                     github: 'ivanmartinezd',
                     linkedin: 'ivan-martinez-de-la-torre',
