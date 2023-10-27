@@ -3,9 +3,9 @@
         class="md:container md:mx-auto mx-auto shadow-lg hover:shadow my-10 mb-20 bg-gray-100 rounded p-6 px-4 text-center">
         <h2 class="text-xl font-medium mb-2">Lucid Lynx</h2>
         <p>
-            "It all starts with an excellent idea and teamwork". We started this project in a web development bootcamp with
-            VUE with in EOI, and it became a challenge in which we gained a great experience, personal and mental
-            development. I hope you enjoy it as we do!</p>
+            It all starts with a great idea and teamwork. We began this project during a web development bootcamp with VUE at EOI, and it became a challenge in which 
+            we gained valuable experience, personal growth, and mental development. 
+            I hope you enjoy it as much as we do.</p>
     </div>
 
 
