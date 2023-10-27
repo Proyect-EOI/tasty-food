@@ -12,16 +12,16 @@
     "name": "Guillermo Escudero",
     "github": "gjescuderoamodeo",
     "linkedin": "guillermo-josé-escudero-amodeo",
-    "city": "Málaga",
-    "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
+    "city": "Sevilla",
+    "bio": "Web and multiplatform developer. I am passionate about programming because I love creating new and useful things with just a computer and my imagination."
   },
   {
     "avatar": "src/assets/img/avatars/hilario.jpg",
     "name": "Hilario Pérez",
     "github": "hilarioperez18",
     "linkedin": "hilarioperez",
-    "city": "Málaga",
-    "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
+    "city": "Madrid",
+    "bio": "Full Stack Developer.I'm a positive person, I'm a lover of technology, I like to help people, I like the guitar."
   },
   {
     "avatar": "src/assets/img/avatars/david.jpg",
@@ -40,11 +40,11 @@
     "bio": "Full stack developer. I enjoy football and playing video games. In my free time, I hang out with my friends and family."
   },
   {
-    "avatar": "src/assets/img/avatars/ivan.jpeg",
+    "avatar": "src/assets/img/avatars/ivan.png",
     "name": "Iván Martínez",
     "github": "ivanmartinezd",
     "linkedin": "ivan-martinez-de-la-torre",
-    "city": "Málaga",
+    "city": "Jaén",
     "bio": "Fullstack Developer. I love doing sports after a long day sitting at the computer, relating to people and read interesting things."
   }
 ]
