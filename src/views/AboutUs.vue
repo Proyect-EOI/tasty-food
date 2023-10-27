@@ -72,7 +72,7 @@ export default {
                     name: 'Hilario Pérez',
                     github: 'hilarioperez18',
                     linkedin: 'hilarioperez',
-                    city: 'Hilario',
+                    city: 'Madrid',
                     bio: "Full Stack Developer.I'm a positive person, I'm a lover of technology, I like to help people, I like the guitar."
                 },
                 {
