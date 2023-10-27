@@ -1,6 +1,6 @@
 [
   {
-    "avatar": "src/assets/img/avatars/barbara.jpeg",
+    "avatar": "/avatars/barbara.jpeg",
     "name": "Bárbara Flores",
     "github": "bflores96",
     "linkedin": "barbara-flores-aranda",
@@ -8,7 +8,7 @@
     "bio": "Front end Developer. I like to play video games, read, go to the gym and spend time with my family."
   },
   {
-    "avatar": "src/assets/img/avatars/guillermo.jpeg",
+    "avatar": "/avatars/guillermo.jpeg",
     "name": "Guillermo Escudero",
     "github": "gjescuderoamodeo",
     "linkedin": "guillermo-josé-escudero-amodeo",
@@ -16,7 +16,7 @@
     "bio": "Web and multiplatform developer. I am passionate about programming because I love creating new and useful things with just a computer and my imagination."
   },
   {
-    "avatar": "src/assets/img/avatars/hilario.jpg",
+    "avatar": "/avatars/hilario.jpg",
     "name": "Hilario Pérez",
     "github": "hilarioperez18",
     "linkedin": "hilarioperez",
@@ -24,7 +24,7 @@
     "bio": "Full Stack Developer.I'm a positive person, I'm a lover of technology, I like to help people, I like the guitar."
   },
   {
-    "avatar": "src/assets/img/avatars/david.jpg",
+    "avatar": "/avatars/david.jpg",
     "name": "David González",
     "github": "gonzsanz",
     "linkedin": "davidgonzalezsanzz",
@@ -32,7 +32,7 @@
     "bio": "Fullstack Developer, passionate about technology and programming, I have a strong professional background and a wide range of interests ranging from fitness to creating personal projects."
   },
   {
-    "avatar": "src/assets/img/avatars/ignacio.jpeg",
+    "avatar": "/avatars/ignacio.jpeg",
     "name": "Ignacio Barbeyto",
     "github": "IgnacioBar",
     "linkedin": "ignaciobarmad",
@@ -40,7 +40,7 @@
     "bio": "Full stack developer. I enjoy football and playing video games. In my free time, I hang out with my friends and family."
   },
   {
-    "avatar": "src/assets/img/avatars/ivan.png",
+    "avatar": "/avatars/ivan.png",
     "name": "Iván Martínez",
     "github": "ivanmartinezd",
     "linkedin": "ivan-martinez-de-la-torre",
